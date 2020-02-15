@@ -1,0 +1,52 @@
+﻿[$RootKey$\Packages\{31ed66c3-253a-4fb7-9788-acff1bbf27b4}]
+@="VSPackage1 Package"
+"InprocServer32"="$PackageFolder$\VSPackage1.dll"
+"CompanyName"="Company"
+"ProductName"="Package Name"
+"ProductVersion"="1.0"
+
+[$RootKey$\Packages\{31ed66c3-253a-4fb7-9788-acff1bbf27b4}\SatelliteDll]
+"DllName"="VSPackage1UI.dll"
+"Path"="$PackageFolder$"
+
+[$RootKey$\Menus]
+"{31ed66c3-253a-4fb7-9788-acff1bbf27b4}"=", 1000, 1"
+
+[$RootKey$\InstalledProducts\VSPackage1]
+@="#100"
+"Package"="{31ed66c3-253a-4fb7-9788-acff1bbf27b4}"
+"ProductDetails"="#102"
+"LogoID"="#400"
+"PID"="1.0"
+"UseInterface"=dword:00000000
+
+
+
+
+[$RootKey$\Editors\{b71aef19-43b7-4539-ba86-6f4823b1d34c}]
+@="VSPackage1"
+"Package"="{31ed66c3-253a-4fb7-9788-acff1bbf27b4}"
+"DisplayName"="VSPackage1"
+"ExcludeDefTextEditor"=dword:00000001
+"AcceptBinaryFiles"=dword:00000000
+
+//The GUID in the below registry entry is the GUID for the text 
+//  logical view, and can be changed to the view that is appropriate
+//  for your editor.
+[$RootKey$\Editors\{b71aef19-43b7-4539-ba86-6f4823b1d34c}\LogicalViews]
+"{7651A703-06E5-11D1-8EBD-00A0C90F26EA}"=""
+
+[$RootKey$\Editors\{b71aef19-43b7-4539-ba86-6f4823b1d34c}\Extensions]
+"vspackage1"=dword:00000032
+
+[$RootKey$\KeyBindingTables\{8a742be5-83ae-48a4-b6b1-76bf1793793a}]
+@="#1"
+"AllowNavKeyBinding"=dword:00000000
+"Package"="{31ed66c3-253a-4fb7-9788-acff1bbf27b4}"
+
+//The first GUID below is the GUID for the Miscellaneous Files project type, and can be changed
+//  to the GUID of any other project you wish.
+[$RootKey$\Projects\{A2FE74E1-B743-11d0-AE1A-00A0C90FFFC3}\AddItemTemplates\TemplateDirs\{31ed66c3-253a-4fb7-9788-acff1bbf27b4}\/1]
+@="#100"
+"TemplatesDir"="$PackageFolder$\Templates"
+"SortPriority"=dword:00004E20
